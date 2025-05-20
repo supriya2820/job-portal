@@ -24,6 +24,7 @@ const startServer = async () => {
     app.use(cors())
     app.use(express.json())
     app.use(clerkMiddleware())
+    
 
     // ROUTES
     app.get('/', (req, res) => res.send("API WORKING"))
